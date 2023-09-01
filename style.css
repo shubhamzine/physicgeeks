@@ -1,0 +1,162 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header_section
+{
+   display:flex;
+   align-items:center;
+   padding:1rem;
+   background:red;
+    width:100%;
+}
+.logo
+{
+    width:60%;
+    font-size:1.5em;
+    color:white;
+}
+.navigation ul
+{
+    list-style: none;
+    background:red;
+}
+.navigation ul li
+{
+   display:inline;
+    padding:1vw;
+    font-size:1em;
+    
+}
+#bar_hold
+{
+    position:absolute;
+    padding:10px;
+    top:20px;
+    left:20px;
+    display:none;
+}
+.bar
+{
+    width:20px;
+    height:3px;
+    background:black;
+    margin-bottom:3px;
+}
+
+.navigation ul li a
+{
+    text-decoration: none;
+    color:white;
+}
+
+.navigation ul li:hover
+{
+   background:rgb(154, 202, 228);
+   border-color:red;
+}
+
+.body_content
+{
+    margin-top:20px;
+    text-align:center;
+}
+.body_content h1
+{
+    font-style:normal;
+    font-size:3em;
+    letter-spacing:1.1;
+    color:cornflowerblue;
+}
+.search_container
+{
+    margin-top:4em;
+    justify-content:center;
+    background:rgb(116, 116, 177);
+    width:100%;
+    height:20em;
+    padding:20px 0px;
+   overflow-y:scroll; 
+}
+#search_box
+{
+    width:30%;
+    height:3em;
+    border-radius:10px;
+    border-style:none;
+    text-align:center;
+    font-size:20px;
+    font-family:consolas;
+   
+}
+input[type=submit]
+{
+    width:10em;
+    height:3em;
+    border:1px solid blue;
+    margin-top:10px;
+    border-radius:10px;
+}
+
+
+#search_result
+{
+    list-style:none;
+    width:50%;
+    margin:auto;
+}
+#search_result li
+{
+    padding:10px;
+    border-bottom:2px solid greenyellow;
+}
+#search_result li a
+{
+    text-decoration:none;
+    font-size:16px;
+    font-family:'lucida handwriting';
+    color:white;
+}
+@media screen and (max-width:900px)
+{
+    #search_box
+    {
+        width:80%;
+    }
+    #search_prompt
+    {
+        width:60%;
+    }
+    .logo
+    {
+        width:100%;
+        text-align:center;
+    }
+    .header_section
+    {
+        display:block;
+    }
+    .navigation
+    {
+        display:none;
+    }
+    .navigation ul li 
+    {
+      
+        display:block;
+        width:100%;
+        font-size:20px;
+        text-align:center;
+    }
+    #bar_hold
+    {
+        display:block;
+    }
+    #search_result 
+    {
+        width:80%;
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src = "script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>PhysicsGeeks</title>
+</head>
+<body>
+    <div class="header_section">
+        <div class="logo">PhysicsGeeks</div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#">download</a></li>
+                <li><a href="#">sign in </a></li>
+                <li><a href="#">log in</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="bar_hold">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+       </div>
+    <div class="body_content">
+        <h1>welcome to PhysicsGeeks</h1>
+        <p style="font-size:20px;letter-spacing:1.1;">search and download unlimited ebooks</p>
+
+        <div class="search_container">
+            <p><input type="text" id = "search_box" placeholder="search by keyword" onfocus="clear_search()" /><p>
+            <p><input type="submit" value="search" id='search_prompt' onclick="search()"/></p>
+           
+            <ul id="search_result">
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>
